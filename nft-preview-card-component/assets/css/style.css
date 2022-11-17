@@ -1,0 +1,175 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+/* variables */
+:root {
+    /* font */
+    --ff-outfit: "Outfit", sans-serif;
+    --fs-400: 18px;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+    /* color */
+    --clr-primary-100: hsl(215, 51%, 70%);
+    --clr-primary-200: hsl(178, 100%, 50%);
+    --clr-neutral-50: hsl(0, 0%, 100%);
+    --clr-neutral-100: hsl(215, 32%, 27%);
+    --clr-neutral-200: hsl(216, 50%, 16%);
+    --clr-neutral-300: hsl(217, 54%, 11%);
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--ff-outfit);
+    font-size: var(--fs-400);
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clr-neutral-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    width: 300px;
+}
+
+.card {
+    padding: 1.5rem;
+    background-color: var(--clr-neutral-200);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.img {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: var(--fw-600);
+    color: var(--clr-neutral-50);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.title:hover {
+    color: var(--clr-primary-200);
+}
+
+.description {
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-100);
+    margin-bottom: 1rem;
+}
+
+.card > .price-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card > .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-detail > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price > img {
+    width: 14px;
+    height: auto;
+}
+
+.price > p {
+    color: var(--clr-primary-200);
+    font-weight: var(--fw-600);
+}
+
+.time > img {
+    width: 16px;
+    height: 16px;
+}
+
+.time > p {
+    color: var(--clr-primary-100);
+    font-weight: var(--fw-300);
+}
+
+.line {
+    margin-block: 1rem;
+    border: 1px solid hsla(215, 51%, 70%, 0.2);
+}
+
+.profile > img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    justify-content: flex-start;
+}
+
+.profile > p {
+    color: var(--clr-primary-100);
+    font-size: 14px;
+    font-weight: var(--fw-300);
+}
+
+.profile > p > a {
+    color: var(--clr-neutral-50);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.profile > p > a:hover {
+    color: var(--clr-primary-200);
+}
